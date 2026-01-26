@@ -39,9 +39,7 @@ my_set.add(10)
 print("updated my_set", my_set)
 
 set1=my_set
-
 set2={10,1,2,3,14,15}
-
 print("difference : ", set1.difference(set2))
 
 # # activity-3
