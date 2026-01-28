@@ -55,7 +55,7 @@ sety={"banana", "orange"}
 print("intersection", setx.intersection(sety))
 
 
-# After Class Projectx
+# After Class Project
 print(" Personal Details Storage Program\n")
 
 # Step 1: Take personal details from the user
