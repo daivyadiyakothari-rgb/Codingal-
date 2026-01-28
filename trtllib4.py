@@ -53,3 +53,36 @@ print("union", setun1.union(setun2))
 setx={"apple", "banana"}
 sety={"banana", "orange"}
 print("intersection", setx.intersection(sety))
+
+
+# After Class Projectx
+print(" Personal Details Storage Program\n")
+
+# Step 1: Take personal details from the user
+first_name = input("Enter your First Name: ")
+last_name = input("Enter your Last Name: ")
+age = int(input("Enter your Age: "))
+height = float(input("Enter your Height (in cm): "))
+weight = float(input("Enter your Weight (in kg): "))
+fav_subject = input("Enter your Favourite Subject: ")
+
+# Step 2: Store details in a tuple
+personal_details = (
+    first_name,
+    last_name,
+    age,
+    height,
+    weight,
+    fav_subject
+)
+
+print("\n✅ Data stored successfully in a tuple!")
+print("Tuple →", personal_details)
+
+# Step 3: Convert tuple to list
+details_list = list(personal_details)
+
+print("\n🔄 Tuple converted into a list!")
+print("List →", details_list)
+
+print("\n🎉 Project completed successfully!")
