@@ -1,4 +1,4 @@
-# Activity 1 (Class Atudent)
+# Activity 1 (Class Student)
 class student:
   grade = 10
   print("Hi, I am student of grade", grade)
