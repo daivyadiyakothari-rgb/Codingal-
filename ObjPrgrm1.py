@@ -96,5 +96,32 @@ if __name__ == "__main__":
 
         else:
             print("❌ Invalid choice! Please enter a number between 1 and 5.")
+# After class project 
+class Expression:
 
-        
+    # Constructor
+    def __init__(self, num1, num2, num3):
+        self.num1 = num1
+        self.num2 = num2
+        self.num3 = num3
+        self.result = 0   # storing result as an attribute
+
+    # Method to calculate and display expression
+    def solve(self):
+        self.result = self.num1 + self.num2 + self.num3
+        print(f"Expression: {self.num1} + {self.num2} + {self.num3}")
+        print(f"Result: {self.result}")
+        print("-" * 30)
+
+
+# Creating multiple objects dynamically
+expressions = [
+    Expression(3, 7, 10),
+    Expression(25, 5, 15),
+    Expression(-4, 8, 6)
+]
+
+# Loop through objects and solve
+for exp in expressions:
+    exp.solve()
+    
