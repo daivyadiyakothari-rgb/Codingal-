@@ -16,4 +16,6 @@ print(apple.color)
 class Employee:
     def __init__(self): 
         print("Emoployee created")
-        
+    print("Employee deleted")
+obj = Employee()
+del obj 
