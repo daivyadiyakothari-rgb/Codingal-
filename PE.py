@@ -47,3 +47,52 @@ c.sell()
 # Using setter function
 c.setMaxPrice(1000)
 c.sell()
+
+# After Class Project
+class Polygon:
+    def __init__(self, name):
+        self.name = name
+
+    def area(self):
+        pass
+
+    def display(self):
+        print(self.name, "Area:", self.area())
+
+
+class Rectangle(Polygon):
+    def __init__(self, length, width):
+        super().__init__("Rectangle")
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+
+class Square(Polygon):
+    def __init__(self, side):
+        super().__init__("Square")
+        self.side = side
+
+    def area(self):
+        return self.side * self.side
+
+
+class Triangle(Polygon):
+    def __init__(self, base, height):
+        super().__init__("Triangle")
+        self.base = base
+        self.height = height
+
+    def area(self):
+        return 0.5 * self.base * self.height
+
+
+rect = Rectangle(10, 5)
+sq = Square(4)
+tri = Triangle(6, 8)
+
+rect.display()
+sq.display()
+tri.display()
