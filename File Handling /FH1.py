@@ -43,4 +43,4 @@ with open("students.txt", "r") as file:
 with open("students.txt", "r+") as file:
     old_content = file.read()
     file.seek(0)
-    file.write("Class Monitor: Roy\n\n" + old_content)
+    file.write("Class Monitor: Arnav\n\n" + old_content)
