@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mishwa Birthday Scrapbook 🎉</title>
+<style>
+body{
+  margin:0;
+  font-family: "Comic Sans MS", cursive;
+  background: linear-gradient(135deg,#ff9a9e,#fbc2eb,#a6c1ee);
+  color:white;
+  overflow:hidden;
+  text-align:center;
+}
+.page{
+  display:none;
+  padding:40px;
+  min-height:100vh;
+  position:relative;
+  border-radius:20px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  box-shadow:0 10px 40px rgba(0,0,0,0.3);
+}
+.page.active{
+  display:block;
+  animation:fade 1s;
+}
+@keyframes fade{
+  0%{opacity:0; transform:scale(0.9);}
+  100%{opacity:1; transform:scale(1);}
+}
+h1{
+  font-size:38px;
+  margin-bottom:10px;
+  text-shadow: 2px 2px 5px #ff69b4;
+}
+p{
+  font-size:20px;
+  line-height:1.6em;
+  max-width:750px;
+  margin:auto;
+}
+button{
+  margin-top:30px;
+  padding:12px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:20px;
+  background:white;
+  color:#ff4fa3;
+  cursor:pointer;
+  transition:0.3s;
+}
+button:hover{
+  transform:scale(1.1);
+}
+.sticker{
+  display:inline-block;
+  font-size:40px;
+  margin:10px;
+  animation:pop 0.8s ease;
+}
+@keyframes pop{
+  0%{transform:scale(0);}
+  50%{transform:scale(1.3);}
+  100%{transform:scale(1);}
+}
+.sparkle{
+  position:absolute;
+  animation:float 6s linear infinite;
+  font-size:20px;
+}
+@keyframes float{
+  0%{transform:translateY(100vh);}
+  100%{transform:translateY(-20vh);}
+}
+@keyframes confetti-fall{
+  0% {transform: translateY(0) rotate(0deg);}
+  100% {transform: translateY(100vh) rotate(360deg);}
+}
+</style>
+</head>
+<body>
+
+<!-- Pages 1 to 6 -->
+
+<div class="page active" id="p1">
+<h1>🎁 Surprise for Mishwa 🎁</h1>
+<p>Hey Mishwa! 🌸💖  
+This scrapbook is packed with our memories, gossip, jokes, and chaotic adventures 😎✨  
+Since Grade 7, every day has been unforgettable 🏫💫  
+Boring classes became fun, small incidents became epic stories 😂🌈</p>
+<div>
+<span class="sticker">🌸</span>
+<span class="sticker">💖</span>
+<span class="sticker">✨</span>
+</div>
+<button onclick="nextPage()">Open 📖</button>
+</div>
+
+<div class="page" id="p2">
+<h1>📚 Grade 7 → Grade 8 Memories</h1>
+<p>Lunch break gossip 🥪💬, secret commentary 🤫, and random class moments turned epic 💫  
+Copying funny teacher mistakes, exchanging smiles, and jokes 👀💖  
+Even boring lectures became memorable 🌈✨</p>
+<div>
+<span class="sticker">😂</span>
+<span class="sticker">💫</span>
+<span class="sticker">💖</span>
+</div>
+<button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="p3">
+<h1>👑 Certified Hong Kong Baddie 👑</h1>
+<p>Mishwa, you are the ultimate baddie 😎💅  
+Energy: 1000% ⚡ Chaos: 1000% 🌪  
+Secret smiles, pranks, and fun make every day memorable 💖  
+Even boring lectures turn into adventures 🌸✨  
+Inside jokes that nobody else gets 🤣💫</p>
+<div>
+<span class="sticker">🔥</span>
+<span class="sticker">🌸</span>
+<span class="sticker">💖</span>
+</div>
+<button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="p4">
+<h1>🕵️ Gossip & Chaos 🕵️‍♀️</h1>
+<p>We are the class reporters 📢😆  
+Code names for everyone 🤫  
+Whisper commentary 💬  
+Small things → huge drama 🎭💥  
+Copying teachers, laughing at mistakes 😂  
+Our secret world of chaos ✨💖🌈</p>
+<div>
+<span class="sticker">💬</span>
+<span class="sticker">🤫</span>
+<span class="sticker">😂</span>
+</div>
+<button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="p5">
+<h1>😂 Inside Jokes & Daily Chaos 😝</h1>
+<p>Random looks 👀, silent laughter 🤫, memes in seconds 🤣  
+Doing masti, bunking, going late to class, making excuses 😎💥  
+Chaos & fun that’s 100% ours 🌈💖✨  
+Every day is an adventure 🎉</p>
+<div>
+<span class="sticker">🤣</span>
+<span class="sticker">🌸</span>
+<span class="sticker">💖</span>
+</div>
+<button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="page" id="p6">
+<h1>🎉 Happy Birthday Mishwa 🎉</h1>
+<p>This gift carries all our memories 🌸💖  
+From <b>Daivya</b> → <b>Mishwa</b> 💌  
+Friendship forever ✨🌈💖  
+P.S. We’ve done a lot — masti, naughty little things, bunking, going late, excuses, and endless laughs 😎🔥💫  
+💖 LYSMM 💖</p>
+<div>
+<span class="sticker">🎈</span>
+<span class="sticker">💖</span>
+<span class="sticker">✨</span>
+<span class="sticker">💫</span>
+</div>
+<br>
+<button onclick="showSecret()">💖 Secret Surprise 💖</button>
+</div>
+
+<script>
+let page=1;
+function nextPage(){
+  document.getElementById("p"+page).classList.remove("active");
+  page++;
+  if(page>6) page=6;
+  document.getElementById("p"+page).classList.add("active");
+}
+
+// Sparkles + emoji popping
+function sparkles(){
+  const elements = ["✨","💖","🌸","🎉","💫","🔥","🤣"];
+  const s=document.createElement("div");
+  s.className="sparkle";
+  s.innerHTML = elements[Math.floor(Math.random()*elements.length)];
+  s.style.left=Math.random()*100+"vw";
+  s.style.fontSize=(15+Math.random()*25)+"px";
+  document.body.appendChild(s);
+  setTimeout(()=>s.remove(),6000);
+}
+setInterval(sparkles,200);
+
+// Secret Surprise with confetti
+function showSecret(){
+  const colors = ['#ff4fa3','#ffeb3b','#00e676','#2979ff','#ff6d00'];
+  const confettiCount = 150;
+  for(let i=0;i<confettiCount;i++){
+    const c = document.createElement('div');
+    c.style.position='absolute';
+    c.style.width='10px';
+    c.style.height='10px';
+    c.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+    c.style.top = Math.random()*100+'vh';
+    c.style.left = Math.random()*100+'vw';
+    c.style.opacity = Math.random();
+    c.style.borderRadius='50%';
+    c.style.animation = `confetti-fall ${2+Math.random()*3}s linear forwards`;
+    document.body.appendChild(c);
+    setTimeout(()=>c.remove(),5000);
+  }
+  alert("🎉 Surprise! Friendship forever from Daivya 💖🌸🎈✨\nRemember all our masti, bunking, going late, excuses, and endless laughs 😎🔥💫\n💖 LYSMM 💖");
+}
+</script>
+
+</body>
+</html>
