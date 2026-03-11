@@ -1,0 +1,37 @@
+# Main.py
+# Program to read files in different ways
+
+file = open("data.txt", "r")
+
+print("Reading whole file using read():")
+content = file.read()
+print(content)
+
+file.close()
+
+
+print("\nReading first line using readline():")
+file = open("data.txt", "r")
+line = file.readline()
+print(line)
+
+file.close()
+
+
+print("\nReading all lines using readlines():")
+file = open("data.txt", "r")
+lines = file.readlines()
+
+for l in lines:
+    print(l.strip())
+
+file.close()
+
+
+print("\nReading file using a loop:")
+file = open("data.txt", "r")
+
+for line in file:
+    print(line.strip())
+
+file.close()
