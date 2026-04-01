@@ -22,7 +22,7 @@ label1 = Label(root, text="Enter the amount:", font=("Arial", 12), bg="#f0f0f0")
 label1.place(x=50, y=250)
 
 Label1 = Label(root, 
-               text="Hey USer! Welcome to Denomination Counter Application.",
+               text="Hey User! Welcome to Denomination Counter Application.",
                bg='light blue')
 label1.place(relx=0.5, y=340, anchor=CENTER)
 
